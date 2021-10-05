@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="invoice">
+    <h1 style="text-align:center;">You have donated Successfully.</h1>
+    <p style="text-align:center;">Thank You for making a difference with us in strive towards the healthier planet.</p>
+    <p style="text-align:center;">It's time to give back to nature</p>
+    <p style="text-align:center;">With much love,<br> Leaf Now:))</p>
+      <a href="/"  style="floar:right;">
+        <img src="https://t3.ftcdn.net/jpg/00/98/03/42/240_F_98034235_Ted4Uh6FxsDDF3nguDTxch7yqoEoHaha.jpg" width="5%" style="position:relative; left:720px; ">
+      </a>
+    </div>
+   <button onclick="generatePDF()" style="color: #fff; position:relative; left:710px; 	cursor: pointer;height:28px; background-color:#000"> <i class="fa fa-download" aria-hidden="true" onclick="generatePDF()">&nbsp;</i>Download</button>
+    <script>
+        function generatePDF(){
+            const element = document.getElementById("invoice");
+            html2pdf()
+                .from(element)
+                .save();
+        }
+    </script>
+</body>
+</html>

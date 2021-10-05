@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    {{>navbar}}
+      
+
+    <body style="background-color:lightcyan;">
+       
+         <h1 class="storeh1">PLANT COLLECTIONS</h1>
+       
+        <section class="container content-section" style="background-color:#ADDFAD">
+           
+            <div class="shop-items">
+                 
+                   
+              <div class="shop-item" style="position:relative; left: 100px;">
+                    <span class="shop-item-title" style="color: darkslategray;position:relative; right: 120px; ">CACTUS</span>
+                    <img class="shop-item-image" src="images/cactus.jpg" width="50%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" id="btn1"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                
+             <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;position:relative; right: 20px;">SUCCULENT LUCKY PLANT</span>
+                    <img class="shop-item-image" src="images/succulent.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" id="btn2"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;">LAVENDER PLANT</span>
+                    <img class="shop-item-image" src="images/lavender.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" style="background-color: green;" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;">SUNFLOWER</span>
+                    <img class="shop-item-image" src="images/sunflower.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" style="background-color: green;" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 class="storeh1">SEED COLLECTIONS</h1>
+        <section class="container content-section" style="background-color: #addfad;">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;">ASHWAGANDHA</span>
+                    <img class="shop-item-image" src="images/ashwagandha.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" style="background-color: green; position:relative;right:50px" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;">GYPSOPHILA</span>
+                    <img class="shop-item-image" src="images/gypsophila.png" height="100%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button"  style="background-color: green; position:relative;right:6px"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" style="color: darkslategray;">PALAK SEEDS</span>
+                    <img class="shop-item-image" src="images/palak.jpg" width="90%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button"  style="background-color: green; position:relative;right:22px; type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="sh2"">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="buybtn" type="button">PURCHASE</button>
+        </section>
+    </body>
+</html>

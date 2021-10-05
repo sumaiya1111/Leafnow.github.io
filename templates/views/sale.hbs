@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        .filepond--item{
+            width: 140px;
+            height: 200px;
+        }
+    </style>
+
+
+
+    <!-- add before </body> -->
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+</head>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FilePond.registerPlugin(
+                FilePondPluginImagePreview,
+                FilePondPluginImageResize,
+                FilePondPluginFileEncode
+            );
+            // https://pqina.nl/filepond/docs/patterns/api/filepond-object/#setting-options
+            FilePond.setOptions({
+                stylePanelAspectRatio: 150 / 100,
+                imageResizeTargetWidth: 100,
+                imageResizeTargetHeight: 150,
+            })
+            FilePond.parse(document.body);
+        });
+    </script>
+    {{>navbar}}
+<body style="background-color:#ADDFAD ">
+    
+
+<div class="ui container">
+    <form action="/add" class="ui form" method="post">
+        <div class="ui two fields">
+            <div class="field">
+                <br><br><label for="name">Plant Name</label>
+                <input type="text" name="name">
+            </div>
+           <div class="field">
+                <br><br> <label for="type"> Type</label>
+                <select name="type" id="">
+                    <option value="action">Plants</option>
+                    <option value="fantasy">Seeds</option>
+                </select>
+            </div>
+        </div>
+          <div class="field">
+                <label for="price">Price</label>
+                <input type="quantity" name="price">
+            </div>
+            <div class="field">
+                <label for="quantity">Quantity</label>
+                <input type="quantity" name="quantity">
+            </div>
+        <!-- HERE WE NEED TO USE FILEPOND -->
+        <div class="ui field">
+            <label for="img">Image</label>
+            <input type="file" name="img" id="img" class="filepond filepond--item">
+        </div>
+        <button class="ui fluid blue button" type="submit" style="background-color:mediumseagreen;">Save</button>
+    </form>
+</div>
+
+<br><br>
+
+    
+</body>
+</html>

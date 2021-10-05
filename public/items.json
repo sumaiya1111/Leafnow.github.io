@@ -1,0 +1,49 @@
+{
+    "plants": [
+         {
+             "id": 1,
+             "name": "CACTUS PLANT",
+             "price": 1299,
+             "imgname": "cactus.jpg" 
+         },
+         {
+            "id": 2,
+            "name": "SUCCULENT LUCKY PLANT",
+            "price": 1499,
+            "imgname": "succulent.jpg" 
+        },
+        {
+            "id": 3,
+            "name": "LAVENDER  PLANT",
+            "price": 999,
+            "imgname": "lavender.jpeg" 
+        },
+        {
+            "id": 4,
+            "name": "SUNFLOWER",
+            "price": 1999,
+            "imgname": "sunflower.jpg" 
+        }
+    ],
+    "seeds": [
+        {
+            "id": 5,
+            "name": "ASHWAGANDHA",
+            "price": 1999,
+            "imgname": "ashwagandha.jpg" 
+        },
+        {
+           "id": 6,
+           "name": "GYPSOPHILA",
+           "price": 699,
+           "imgname": "gypsophila.png" 
+       },
+       {
+           "id": 7,
+           "name": "PALAK SEEDS",
+           "price": 699,
+           "imgname": "palak.jpg" 
+       }
+
+    ]
+}

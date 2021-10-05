@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <title>Home</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    {{>navbar}}
+<body class="donatebody">
+  <div class="app-container">
+ <h4 class="h4donate">DONATE<span><br>& Spread Green</span></h4>
+          <div class="middle-box">
+            <h1 style="color: #fff;">1<span style="color: #fff;">Rs</span></h1>
+          </div>
+
+          <div class="bottom-box">
+            <div class="card-details">
+              <p>Pay using credit or debit card</p>
+              <div class="card-num-field-group">
+<label>Card Number</label><br>
+<input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+              </div>
+
+              <div class="date-field-group">
+                <label>Expiry Date</label><br>
+                <input type="text" class="date-field" placeholder="mm">
+                <input type="text" class="date-field" placeholder="yyyy">
+                              </div>
+
+                <div class="cvc-field-group">
+                <label>CVC</label><br>
+                <input type="password" class="cvc-field" placeholder="xxx">
+                </div>  
+                <div class="name-field-group">
+                  <label>Card holder name</label><br>
+                  <input type="text" class="name-field" placeholder="Full name">
+                  </div>     
+                  <button type="button" class="pay-btn"><a href="/invoice">Pay Now</a></button>   
+                
+            </div>
+            
+          </div>
+    </div>
+</body>
+</html>
